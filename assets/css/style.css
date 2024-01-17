@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 32px;
+}
+
+nav {
+  color: white;
+}
+nav .navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+nav .navbar .n-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .n-1 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  list-style: none;
+}
+nav .navbar .n-1 ul li {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+nav .navbar .n-1 .p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+nav .navbar .n-1 .p p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+nav .navbar .n-1 .p p i {
+  color: rgb(245, 128, 33);
+  font-size: 13px;
+}
+nav .navbar .n-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar .n-2 .logo {
+  font-size: 45px;
+  font-weight: 800;
+}
+nav .navbar .n-2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+nav .navbar .n-2 ul li {
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+nav .navbar .n-2 ul li:hover {
+  cursor: pointer;
+  color: rgb(245, 128, 33);
+}
+nav .navbar .n-2 ul #a {
+  color: rgb(245, 128, 33);
+}
+
+.banner {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/hero_2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner .b-all {
+  width: 100%;
+  padding: 150px 0;
+}
+.banner .b-all .b-head {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  gap: 10px;
+}
+.banner .b-all .b-head h1 {
+  font-size: 90px;
+}
+.banner .b-all .b-head p {
+  font-size: 22px;
+  font-weight: 300;
+  padding-right: 500px;
+}
+.banner .b-all .b-head .btn {
+  display: flex;
+  gap: 3px;
+}
+.banner .b-all .b-head .btn button {
+  background-color: white;
+  border: 2px solid white;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 20px 0;
+  cursor: pointer;
+  margin-top: 50px;
+  transition: all 0.5s ease;
+}
+.banner .b-all .b-head .btn #shop {
+  width: 170px;
+  background: none;
+  color: white;
+}
+.banner .b-all .b-head .btn #shop:hover {
+  background-color: white;
+  color: black;
+}
+.banner .b-all .b-head .btn #club {
+  width: 220px;
+}
+.banner .b-all .b-head .btn #club:hover {
+  background: none;
+  color: white;
+}
+
+.popular {
+  width: 100%;
+}
+.popular .p-all {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 0;
+}
+.popular .p-all .p-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+}
+.popular .p-all .p-head h6 {
+  font-size: 14px;
+  color: gray;
+}
+.popular .p-all .p-head h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.popular .p-all .p-head p {
+  font-size: 17px;
+  color: gray;
+}
+.popular .p-all .p-divs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.popular .p-all .p-divs table {
+  border: 2px solid black;
+  width: 50%;
+}
+.popular .p-all .p-divs table th {
+  border: 2px solid black;
+}
+.popular .p-all .p-divs table td {
+  border: 2px solid black;
+}
+.popular .p-all .p-divs #form {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: navy;
+  color: white;
+  font-size: 20px;
+  padding: 50px;
+}
+.popular .p-all .p-divs #form input {
+  padding: 10px 0;
+}
+.popular .p-all .p-divs #form img {
+  width: 50%;
+}
+.popular .p-all .p-divs .div6 {
+  width: 31%;
+  background-color: red;
+}
+.popular .p-all .p-divs .div6 .p-img {
+  width: 100%;
+}
+.popular .p-all .p-divs .div6 .p-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular .p-all .p-divs .div6 .p-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  gap: 10px;
+  text-align: center;
+  padding: 30px;
+}
+.popular .p-all .p-divs .div6 .p-text h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+.popular .p-all .p-divs .div6 .p-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.popular .p-all .p-divs .div6 .p-text .btn button {
+  width: 100px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .container .navbar .n-2 ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 990px) {
+  nav .container {
+    max-width: 800px;
+  }
+  nav .container .navbar .n-1 .p {
+    display: none;
+  }
+  .banner .container {
+    max-width: 800px;
+  }
+  .banner .container .b-all .b-head h1 {
+    font-size: 40px;
+  }
+  .banner .container .b-all .b-head p {
+    padding-right: 300px;
+  }
+  .banner .container .b-all .b-head .btn {
+    flex-direction: column;
+    gap: 3px;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .container {
+    max-width: 550px;
+  }
+  .banner .container {
+    max-width: 550px;
+  }
+  .banner .container .b-all .b-head p {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav .container {
+    padding: 0 10px;
+  }
+  .banner .container {
+    padding: 0 10px;
+  }
+  .banner .container .b-all .b-head .btn {
+    width: 100%;
+  }
+  .banner .container .b-all .b-head .btn #club, .banner .container .b-all .b-head .btn #shop {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

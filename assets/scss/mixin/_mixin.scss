@@ -1,0 +1,16 @@
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin mini{
+    width: 100%;
+    @include flex;
+}
+
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

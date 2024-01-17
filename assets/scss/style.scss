@@ -1,0 +1,338 @@
+@import "./variables";
+@import "./mixin/mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 0 32px;
+}
+
+nav {
+    color: white;
+
+    .navbar {
+        @include mini;
+        color: black;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px 0;
+
+        .n-1 {
+            @include mini;
+            justify-content: space-between;
+
+            ul {
+                @include flex;
+                gap: 5px;
+                list-style: none;
+
+                li {
+                    width: 30px;
+                    height: 30px;
+                    background-color: black;
+                    color: white;
+                    @include flex;
+                    border-radius: 50%;
+                }
+            }
+
+            .p {
+                @include flex;
+                gap: 20px;
+
+                p {
+                    @include flex;
+                    gap: 10px;
+                    font-size: 18px;
+
+                    i {
+                        color: $orange;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+        .n-2 {
+            @include mini;
+            justify-content: space-between;
+
+            .logo {
+                font-size: 45px;
+                font-weight: 800;
+            }
+
+            ;
+
+            ul {
+                @include flex;
+                gap: 50px;
+                list-style: none;
+
+                li {
+                    font-size: 18px;
+                    transition: all .5s ease;
+                    &:hover{
+                        cursor: pointer;
+                        color: $orange;
+                    }
+                }
+                #a {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../images/hero_2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    .b-all{
+        width: 100%;
+        padding: 150px 0;
+        .b-head{
+            @include column;
+            color: white;
+            gap: 10px;
+            h1{
+                font-size: 90px;
+            }
+            p{
+                font-size: 22px;
+                font-weight: 300;
+                padding-right: 500px;
+            }
+            .btn{
+                display: flex;
+                gap: 3px;
+            button{
+                background-color: white;
+                border: 2px solid white;
+                font-weight: 800;
+                font-size: 12px;
+                padding: 20px 0;
+                cursor: pointer;
+                margin-top: 50px;
+                transition: all .5s ease;
+            }
+            
+            #shop{
+                width: 170px;
+                background: none;
+                color: white;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+            #club{
+                width: 220px;
+                &:hover{
+                    background: none;
+                    color: white;
+                }
+            }
+        }
+
+        }
+    }
+}
+
+.popular{
+    width: 100%;
+    .p-all{
+        @include mini;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 0;
+        .p-head{
+            @include flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+            text-align: center;
+            h6{
+                font-size: 14px;
+                color: gray;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 17px;
+                color: gray;
+                
+            }
+        }
+        .p-divs{
+            @include mini;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            table{
+                border: 2px solid black;
+                width: 50%;
+                th{
+                    border: 2px solid black;
+                }
+                td{
+                    border: 2px solid black;
+                }
+            }
+
+            #form{
+                width: 50%;
+                margin: auto;
+                @include column;
+                background-color: navy;
+                color: white;
+                font-size: 20px;
+                padding: 50px;
+                input{
+                    padding: 10px 0;
+                }
+                img{
+                    width: 50%;
+                }
+            }
+            .div6{
+                width: 31%;
+                background-color: red;
+                .p-img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .p-text{
+                    width: 100%;
+                    @include column;
+                    gap: 10px;
+                    text-align: center;
+                    padding: 30px;
+                    h3{
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                    .btn{
+                      @include flex;
+                      gap: 10px;
+                      button{
+                        width: 100px;
+                        padding: 10px 0;
+                      }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    nav{
+        .container{
+            .navbar{
+                .n-2{
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    nav{
+        .container{
+            max-width: 800px;
+            .navbar{
+                .n-1{
+                    .p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .banner{
+        .container{
+            max-width: 800px;
+            .b-all{
+                .b-head{
+                    h1{
+                        font-size: 40px;
+                    }
+                    p{
+                        padding-right: 300px;
+                    }
+                    .btn{
+                        flex-direction: column;
+                        gap: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav{
+        .container{
+            max-width: 550px;
+        }
+    }
+
+    .banner{
+        .container{
+            max-width: 550px;
+         .b-all{
+            .b-head{
+                p{
+                    padding: 0;
+                }
+            }
+         }
+        }
+    }
+}
+
+@media screen and (max-width:576px){
+    nav{
+        .container{
+            padding: 0 10px;
+        }
+    }
+
+    .banner{
+        .container{
+            padding: 0 10px;
+            .b-all{
+                .b-head{
+                    .btn{
+                        width: 100%;
+                        #club, #shop{
+                            width: 100%;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
